@@ -1,0 +1,799 @@
+<!-- SOURCE - https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h-->
+<!-- DEMO - https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm#-->
+<!DOCTYPE html>
+<html>
+<title>æspa (에스파)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Style -->
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px} 
+
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 110px;background: #aaa9ff;}
+
+.hoverpointer {
+  cursor: pointer;
+}
+.bgAespa {
+  background-image: url('Photos/PageDesign/aespamaintaskbar.jpg');
+  min-height: 50%;
+  /* background-position: center; */
+  background-size: 100%;
+}
+
+.downloadBtn {
+  background-color: rgb(53, 52, 52);
+  color: white;
+  cursor: pointer;
+  padding: 8px 24px;
+  float: right;
+}
+
+.mainBg {
+    /* background-image: linear-gradient(to bottom right, #A88BEB, #F8CEEC); */
+    
+  background-image: url("Photos/PageDesign/dreamy.jpg");
+  background-size: cover;
+  color:black;
+}
+.taskbar{
+    background-image: url('Photos/PageDesign/aespamaintaskbar.jpg');
+}
+
+.wrapper{
+  display:flex;
+  /* background-image: url("Photos/PageDesign/dreamy.jpg");
+  /* background-color: white; 
+  background-size:cover;*/
+  width: auto; 
+}
+
+.wrapper2{
+  width: 100%;
+  /* top left bottom right */
+  margin: 0 5% 2% 5%;
+}
+
+.vidContainer{
+  margin:20px;
+}
+
+.c1{
+  /* top left bottom right */
+  margin: 1% 5% 2% 5%;
+  width: 70%;
+}
+.c2{
+  float: right;
+  /* top left bottom right */
+  margin: 3% 3% 0 0;
+  /* padding-top: 20px;
+  padding-left:40px */
+}
+
+.p1{
+  width:25%
+}
+
+
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  background-image: url("Photos/PageDesign/dreamy.jpg");
+  /* background-color: white; */
+  background-size:cover;
+}
+
+.container2{
+  display:flex;
+  width:25%;
+  background-color: aliceblue;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+</style>
+
+
+
+<body class = "mainBg" >
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="Photos/PageDesign/aespaLogo.jpg" style="width:100%">
+  <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-sort-asc w3-xxlarge"></i>
+    <p>TOP</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-info w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#members" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-id-badge w3-xxlarge"></i>
+    <p>MEMBERS</p>
+  </a>
+  <a href="#album" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-music w3-xxlarge"></i>
+    <p>ALBUMS</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-image w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#company" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-building w3-xxlarge"></i>
+    <p>COMPANY</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="/" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#members" class="w3-bar-item w3-button" style="width:25% !important">MEMBERS</a>
+    <a href="#album" class="w3-bar-item w3-button" style="width:25% !important">ALBUMS</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#company" class="w3-bar-item w3-button" style="width:25% !important">COMPANY</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-16 w3-center taskbar" id="home">
+    <h1 class="w3-jumbo" style="font-family: 'Times New Roman', Times, serif;"> æspa (에스파)</h1>
+    <h2 style="font-family: 'Times New Roman', Times, serif; padding-bottom: 10px;"> Be my ae! Hi, we are æspa!</h2>
+    <!-- <img src="Photos/Group/group1.jpg" alt="group picture" class="w3-image" width="992" height="1108"> -->
+  </header>
+  <div class = "w3-container w3-padding-16 w3-center">
+    <img src="Photos/Group/aespaGroup1.jpg" alt="group picture" class="w3-image" width="992" height="1108">
+  </div>
+   
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-32" id="about">
+    <h2 class="w3-text-light-grey">About</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>æspa (에스파) is a four-member girl group under SM Entertainment. They debuted on November 17, 2020 with the digital single “Black Mamba”. The group's fandom name is known as MY.</p>
+    <h4> Why aespa?</h4>
+    <p> Their name comes from combining ‘æ’ derived from ‘Avatar X Experience’ & ‘aspect’. The meaning behind the name is various innovative activities to come with the theme of ‘Experiencing a new world via the encounter of the ‘avatar’, your other self’.</p>
+    <video width="100%" height="100%" controls>
+        <source src="video/savage mv.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video> 
+    
+
+    <!-- SNS account -->
+    <h2 class="w3-text-light-grey" style="padding-top: 32px">Official Accounts</h2>
+    <p>Instagram: <a href="https://www.instagram.com/ivestarship/" target="_blank" class="w3-hover-text-red">instagram/aespa_official</a><p>
+    <p>Twitter: <a href="https://twitter.com/aespa_official" target="_blank" class="w3-hover-text-red">twitter/aespa_official</a><p>
+    <p>Facebook: <a href="https://www.facebook.com/aespa.official" target="_blank" class="w3-hover-text-red">facebook/aespa_official</a><p>
+    
+
+    <!-- Members -->
+    <div class="w3-padding-16 w3-content" id="members">
+      <h2 class="w3-text-light-grey">Members</h2>  
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-white" onclick="document.getElementById('karina').style.display='block'">
+        <img src="Photos/Gaeul/g10.jpg" alt="Karina" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Karina, Yoo Ji Min (유지민).</span> 11th April 2000.</p>
+        <p>Leader, Main Dancer, Lead Rapper, Sub Vocalist, Visual, Face Of The Group, Center.</p><br>
+      </div>
+
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-white" onclick="document.getElementById('giselle').style.display='block'">
+        <img src="Photos/Yujin/y10.jpg" alt="Giselle" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Giselle, Uchinaga Aeri (うちながえり/우치나가에리).</span> 30th October 2000.</p>
+        <p>Main Rapper, Sub Vocalist.</p>
+        <br>  
+      </div>
+
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-white" onclick="document.getElementById('winter').style.display='block'">
+        <img src="Photos/Rei/rei5.PNG" alt="Winter" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Winter,  Kim Min Jeong (김민정).</span> 1st January 2001.</p>
+        <p>Lead Vocalist, Lead Dancer, Visual.</p>
+        <br>
+      </div>
+      
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-white" onclick="document.getElementById('ningning').style.display='block'">
+        <img src="Photos/WonYoung/wy5.PNG" alt="Ningning" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Ningning,  Ning Yizhuo (宁艺卓)</span> 23rd October 2002.</p>
+        <p>Main Vocalist, Maknae.</p>
+        <br>
+      </div>
+    </div>
+    
+    <!-- Album Tiles -->
+    <div class="w3-padding-32 w3-content w3-row-padding" id="album">
+        <h2 class="w3-text-light-grey">Album</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <!-- <div class="w3-row-padding" > -->
+        <div class="w3-quarter " style = "cursor: pointer;">
+            <ul class="w3-ul w3-opacity w3-hover-opacity-off">
+            <img src = "Song/Black Mamba/cover.jpg" width= 100% height = 100% onclick="document.getElementById('blackmamba').style.display='block'">
+            </ul>
+        </div>
+        <div class="w3-quarter " style = "cursor: pointer;">
+          <ul class="w3-ul w3-opacity w3-hover-opacity-off">
+          <img src = "Song/Forever (약속)/cover.jpg" width= 100% height = 100% onclick="document.getElementById('forever').style.display='block'">
+          </ul>
+        </div>
+        <div class="w3-quarter " style = "cursor: pointer;">
+          <ul class="w3-ul w3-opacity w3-hover-opacity-off">
+          <img src = "Song/Next Level/cover.jpg" width= 100% height = 100% onclick="document.getElementById('nextlevel').style.display='block'">
+          </ul>
+        </div>
+        <div class="w3-quarter " style = "cursor: pointer;">
+          <ul class="w3-ul w3-opacity w3-hover-opacity-off">
+          <img src = "Song/Savage - The 1st Mini Album/cover.jpg" width= 100% height = 100% onclick="document.getElementById('savage').style.display='block'">
+          </ul>
+        </div>
+        <div class="w3-quarter " style = "cursor: pointer;">
+          <ul class="w3-ul w3-opacity w3-hover-opacity-off">
+          <img src = "Song/aespa - Dreams Come True - SM STATION/cover.jpg" width= 100% height = 100% onclick="document.getElementById('dreamscometrue').style.display='block'">
+          </ul>
+        </div>
+    </div>
+    
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="Photos/Group/aespaGroup1.JPG" style="width:100%">
+        <img src="Photos/Group/aespaGroup2.JPG" style="width:100%">
+        <img src="Photos/Group/aespaGroup3.JPG" style="width:100%">
+        <img src="Photos/Group/aespaGroup5.JPG" style="width:100%">
+        <img src="Photos/Group/aespaGroup4.JPG" style="width:100%">
+        <img src="Photos/Group/aespaGroup7.JPG" style="width:100%">
+        <img src="Photos/Group/aespaGroup14.jpg" style="width:100%">
+        <img src="Photos/Group/aespaGroup16.jpg" style="width:100%">
+        <img src="Photos/Group/aespaGroup17.jpg" style="width:100%">
+        <img src="Photos/Group/aespaGroup21.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="Photos/Group/aespaGroup8.JPG" style="width:100%">
+        <img src="Photos/Group/aespaGroup9.JPG" style="width:100%">
+        <img src="Photos/Group/aespaGroup10.JPG" style="width:100%">
+        <img src="Photos/Group/aespaGroup11.JPG" style="width:100%">
+        <img src="Photos/Group/aespaGroup12.JPG" style="width:100%">
+        <img src="Photos/Group/aespaGroup13.jpg" style="width:100%">
+        <img src="Photos/Group/aespaGroup15.jpg" style="width:100%">
+        <img src="Photos/Group/aespaGroup18.jpg" style="width:100%">
+        <img src="Photos/Group/aespaGroup13.jpg" style="width:100%">
+        <img src="Photos/Group/aespaGroup20.jpg" style="width:100%">
+        <img src="Photos/Group/aespaGroup19.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="company">
+    <h2 class="w3-text-light-grey">Starship Entertainment</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Seoul, South Korea</p>
+      <!-- <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> -->
+      <!-- <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p> -->
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:<a>href = http://www.starship-ent.com/</a></p>
+    </div><br>
+
+  </div>
+
+
+<!-- Members Stats Modal PopUp-->
+<div id="karina" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-white w3-display-container bgAespa">
+      <span onclick="document.getElementById('karina').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Karina</h1>
+    </div>
+    <div class="container">
+      <div class="wrapper color:black;">
+        <div class="c1">
+          <h4>Birth Name:</h4>
+          <p>Yoo Ji Min  (유지민)</p>
+          <h4> Birth Date:</h4>
+          <p> 11th April 2000</p>
+          <h4> Height:</h4> 
+          <p>167.8 cm</p>
+          <h4> Weight:</h4> 
+          <p>45 kg</p>
+          <h4> Nationality:</h4> 
+          <p>Korean</p>
+          <h4> Blood Type:</h4> 
+          <p>B</p>
+        </div>
+        <div class ="c2">
+          <img src="Photos/Karina/karina4.jpg" style='width: 42%; object-fit: cover; float:right; margin-right:5%'>
+        </div>
+      </div>
+      <div class="wrapper2">
+        <video width="100%" height="100%" controls>
+          <source src="video/synk karina.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="giselle" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-white w3-display-container bgAespa">
+      <span onclick="document.getElementById('giselle').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Giselle</h1>
+    </div>
+    <div class="container">
+      <div class="wrapper color:black;">
+        <div class="c1">
+          <h4>Birth Name:</h4>
+        <p>Uchinaga Aeri (うちながえり/우치나가에리)</p>
+        <h4> Birth Date:</h4>
+        <p> 30th October 2000</p>
+        <h4> Height:</h4> 
+        <p>164 cm</p>
+        <h4> Weight:</h4> 
+        <p> - </p>
+        <h4> Nationality:</h4> 
+        <p>Korean-Japanese</p>
+        <h4> Blood Type:</h4> 
+        <p>O</p>
+        </div>
+        <div class ="c2">
+          <img src="Photos/Giselle/giselle2.jpg" style='width: 42%; object-fit: cover; float:right; margin-right:5%'>
+        </div>
+      </div>
+      <div class="wrapper2">
+        <video width="100%" height="100%" controls>
+          <source src="video/synk giselle.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="winter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-white w3-display-container bgAespa">
+      <span onclick="document.getElementById('winter').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Winter</h1>
+    </div>
+    <div class="container">
+      <div class="wrapper color:black;">
+        <div class="c1">
+          <h4>Birth Name:</h4>
+        <p>Kim Min Jeong (김민정)</p>
+        <h4> Birth Date:</h4>
+        <p> 1st January 2001</p>
+        <h4> Height:</h4> 
+        <p>164 cm</p>
+        <h4> Weight:</h4> 
+        <p> -</p>
+        <h4> Nationality:</h4> 
+        <p>Korean</p>
+        <h4> Blood Type:</h4> 
+        <p>A</p>
+        </div>
+        <div class ="c2">
+          <img src="Photos/Winter/winter2.jpg" style='width: 42%; object-fit: cover; float:right; margin-right:5%'>
+        </div>
+      </div>
+      <div class="wrapper2">
+        <video width="100%" height="100%" controls>
+          <source src="video/synk winter.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ningning" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-white w3-display-container bgAespa">
+      <span onclick="document.getElementById('ningning').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>NingNing</h1>
+    </div>
+    <div class="container">
+      <div class="wrapper" style="color:black">
+        <div class="c1">
+          <h4>Birth Name:</h4>
+          <p>Ning Yizhuo (宁艺卓)</p>
+          <h4> Birth Date:</h4>
+          <p> 23rd October 2002</p>
+          <h4> Height:</h4> 
+          <p>161 cm</p>
+          <h4> Weight:</h4> 
+          <p>43 kg</p>
+          <h4> Nationality:</h4> 
+          <p>Chinese</p>
+          <h4> Blood Type:</h4> 
+          <p>O</p>
+        </div>
+        <div class ="c2">
+          <img src="Photos/NingNing/ningning2.jpg" style='width: 42%; object-fit: cover; float:right; margin-right:5%'>
+        </div>
+      </div>
+      <div class="wrapper2">
+        <video width="100%" height="100%" controls>
+          <source src="video/synk ningning.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="wrapper2 ">
+        <h1>Photos of NingNing</h1>
+        <div class="row"> 
+          <div class="column">
+            <img src="Photos/NingNing/ningning1.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning5.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning11.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning14.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning15.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning23.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning25.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning30.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning34.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning29.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="Photos/NingNing/ningning2.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning6.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning7.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning12.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning16.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning10.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning21.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning27.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning32.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning37.jpg" style="width:100%">
+          </div>  
+          <div class="column">
+            <img src="Photos/NingNing/ningning3.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning8.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning17.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning18.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning19.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning24.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning28.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning31.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning35.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning36.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="Photos/NingNing/ningning4.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning10.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning9.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning13.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning20.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning22.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning26.jpg" style="width:100%">
+            <img src="Photos/NingNing/ningning33.jpg" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END PAGE CONTENT -->
+</div>
+</body>
+</html>
+
+
+<!-- Album Songs Modal PopUp -->
+<!-- Black Mamba -->
+<div id="blackmamba" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-black w3-display-container bgAespa">
+      <span onclick="document.getElementById('blackmamba').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge color:black">x</span>
+      <h1>Songs</h1>
+    </div>
+    <div class="w3-container mainBg" style="padding-bottom: 24px;">
+      <div class="audio-player">
+        <h2>1. Black Mamba</h2>
+        <audio id="audio-player" src="song/Black Mamba/01. Black Mamba.mp3" type="audio/mp3" controls="controls" title="Black Mamba"></audio>
+        <a href="https://drive.google.com/file/d/1wvCFEcC28twBlzLSs32FOlUZf9yd009f/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Forever -->
+<div id="forever" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-black w3-display-container bgAespa">
+      <span onclick="document.getElementById('forever').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+    <div class="w3-container mainBg" style="padding-bottom: 24px;">
+      <div class="audio-player">
+        <h2>1. Forever</h2>
+        <audio id="audio-player" src="song/Forever (약속)/01. Forever 약속.mp3" type="audio/mp3" controls="controls" title="Forever"></audio>
+        <a href="https://drive.google.com/file/d/1qp8NkTc3tbzTY0NPbxZrBmduHOSUNdS5/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Next Level -->
+<div id="nextlevel" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-black w3-display-container bgAespa">
+      <span onclick="document.getElementById('nextlevel').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+    <div class="w3-container mainBg" style="padding-bottom: 24px;">
+      <div class="audio-player">
+        <h2>1. Next Level</h2>
+        <audio id="audio-player" src="song/Next Level/01. Next Level.mp3" type="audio/mp3" controls="controls" title="Next Level"></audio>
+        <a href="https://drive.google.com/file/d/1P3NOnSIpYjRdwtvMmh1L8dfJjN_6zc17/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Savage -->
+<div id="savage" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-black w3-display-container bgAespa">
+      <span onclick="document.getElementById('savage').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+    <div class="w3-container mainBg" style="padding-bottom: 24px;">
+      <div class="audio-player">
+        <h2>1. ænergy</h2>
+        <audio id="audio-player" src="song/Savage - The 1st Mini Album/01. aenergy.mp3" type="audio/mp3" controls="controls" title="aenergy"></audio>
+        <a href="https://drive.google.com/file/d/1AXWaMyB3wKGWbf37jrJXY4KpWZo1Nv_7/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+      <div class="audio-player">
+        <h2>2. Savage</h2>
+        <audio id="audio-player" src="song/Savage - The 1st Mini Album/02. Savage.mp3" type="audio/mp3" controls="controls" title="Savage"></audio>
+        <a href="https://drive.google.com/file/d/1nYUJRMpnO6Rl46M1N34Wuab52LejfOiQ/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+      <div class="audio-player">
+        <h2>3. I'll Make You Cry</h2>
+        <audio id="audio-player" src="song/Savage - The 1st Mini Album/03. I'll Make You Cry.mp3" type="audio/mp3" controls="controls" title="I'll Make You Cry"></audio>
+        <a href="https://drive.google.com/file/d/1mua0oou-9rdGltyT2POuHjSUkpqLSKgL/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+      <div class="audio-player">
+        <h2>4. YEPPI YEPPI</h2>
+        <audio id="audio-player" src="song/Savage - The 1st Mini Album/04. YEPPI YEPPI.mp3" type="audio/mp3" controls="controls" title="Yeppi Yeppi"></audio>
+        <a href="https://drive.google.com/file/d/1GUTL1eFNxq6EQocmz6f1piUpB8Jt-xg5/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+      <div class="audio-player">
+        <h2>5. ICONIC</h2>
+        <audio id="audio-player" src="song/Savage - The 1st Mini Album/05. ICONIC.mp3" type="audio/mp3" controls="controls" title="Iconic"></audio>
+        <a href="https://drive.google.com/file/d/1gkHrm2iOXuTojgxXLoAyWFFRPpZ-j3aM/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+      <div class="audio-player">
+        <h2>6. 자각몽(Lucid Dream)</h2>
+        <audio id="audio-player" src="song/Savage - The 1st Mini Album/06. 자각몽 (Lucid Dream).mp3" type="audio/mp3" controls="controls" title="Lucid Dream"></audio>
+        <a href="https://drive.google.com/file/d/1mEYlmn4_PT9UAXITvaYdwSZQd0Q3Nejb/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DreamsComeTrue -->
+<div id="dreamscometrue" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-black w3-display-container bgAespa">
+      <span onclick="document.getElementById('dreamscometrue').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+    <div class="w3-container mainBg" style="padding-bottom: 24px;">
+      <div class="audio-player">
+        <h2>1. Dreams Come True</h2>
+        <audio id="audio-player" src="song/aespa - Dreams Come True - SM STATION/01. Dreams Come True.mp3" type="audio/mp3" controls="controls" title="Dreams Come True"></audio>
+        <a href="https://drive.google.com/file/d/1OIUa8gWZpIWB7v58qWAPapsblFVjYaxF/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+      <div class="audio-player">
+        <h2>2. Dreams Come True (inst.)</h2>
+        <audio id="audio-player" src="song/aespa - Dreams Come True - SM STATION/02. Dreams Come True (Instrumental).mp3" type="audio/mp3" controls="controls" title="Dreams Come True (inst.)"></audio>
+        <a href="https://drive.google.com/file/d/1ad7v00egbSeadE4lKwPEY2UhM6c8XWgh/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- CSS -->
+<!-- <style>
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Photos/Group/group1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Photos/Group/group2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Photos/Group/group3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Photos/Group/group4.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>  -->
+
+    
