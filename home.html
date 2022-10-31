@@ -1,0 +1,132 @@
+<!-- SOURCE - https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h-->
+<!-- DEMO - https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm#-->
+<!DOCTYPE html>
+<html>
+<title>Song's Webpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Style -->
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px} 
+
+
+.hoverpointer {
+  cursor: pointer;
+}
+
+container{
+            width:100%;
+            display: flex;
+            padding-bottom: 20px;   
+            position: absolute;
+            /* align-items:flex-end; */
+}
+
+.content1{
+    /* padding top left bottom right */
+    margin: 30px 40px 40px 70px   ;
+    position:relative;
+    width:50%; 
+    overflow: auto;
+    flex-direction: column;
+}
+
+
+
+.content2{
+    /* padding top left bottom right */
+    margin: 40px 70px 40px 30px   ;
+    position:relative;
+    width: 50%;
+    height: auto;
+}
+
+
+img{
+    opacity:1;
+    background-size:cover;
+}
+img:hover{
+    opacity: 0.25;
+}
+
+img:hover + .img_desc{
+    opacity: 1;
+    visibility: visible;
+}
+
+.img_desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:4vw;
+    visibility: hidden;
+    opacity: 0;
+    color:black;
+}
+
+
+.bg {
+    background: blanchedalmond;
+    display:flex;
+    background-size:cover;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+.taskbar{
+    background: black;
+}
+.tiles{
+    display: flex ;
+}
+h1{
+    font-family: 'Courier New';
+}
+
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+/* #main {margin-left: 100px} */
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+
+
+<div class="bg" id="main" style=" margin: 20px 0 0 0" >
+        
+    <!-- padding top left bottom right -->
+    <div class= "container " id="header" style = "margin: 50px 0 30px 80px; width: auto;">
+        <h1 style="font-size: 3vw"> Song's Webpage</h1>
+    </div> 
+
+</div>
+<div class="bg" id="main" style="padding-top: 30px" >
+    <div class="content1">
+            <!-- <img src="aespa/Photos/Group/aespaGroup2.jpg" alt="aespa group" style = width:100%;> -->
+            <div style = "cursor: pointer;">
+                <a href="/ive"><img src="home/home_img/group1.JPG" alt="IVE Group Photo" style = width:100% onclick="document.getElementById('blackmamba').style.display='block'">
+                <p class = "img_desc">IVE</p>
+                </a>
+                <!-- <img src = "ive/Photos/Album/eleven.jpg" class="w3-image"> -->
+            </div>
+            
+    </div> 
+              
+
+    <div class="content2">
+        <div style = "cursor: pointer;">
+            <a href="/aespa"><img src="home_img/aespaGroup7.jpg" alt="aespa Group Photo" style = width:100% onclick="document.getElementById('blackmamba').style.display='block'">
+                <p class = "img_desc">æspa</p>
+                </a>
+        </div>
+    </div>
+</div>

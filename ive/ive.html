@@ -1,0 +1,546 @@
+<!-- SOURCE - https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h-->
+<!-- DEMO - https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm#-->
+<!DOCTYPE html>
+<html>
+<title>I'VE (아이브)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Style -->
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px} 
+
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 110px;background: #222;}
+
+.hoverpointer {
+  cursor: pointer;
+}
+.bgEleven {
+  background-image: url('photos/Album/eleven.jpg');
+  min-height: 10%;
+  /* background-position: center; */
+  background-size: 10%;
+}
+
+.downloadBtn {
+  background-color: rgb(53, 52, 52);
+  color: white;
+  cursor: pointer;
+  padding: 8px 24px;
+  float: right;
+
+}
+
+.wrapper{
+  display:flex;
+  background-color: darkgrey;
+  background-size:cover;
+  width: 900px;
+}
+
+.c1{
+  padding:20px;
+  width: 3300px;
+}
+.c2{
+  float: right;
+  padding-top: 20px;
+  padding-left:40px
+}
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+
+
+
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="Photos/Group/logo1.jpg" style="width:100%">
+  <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-sort-asc w3-xxlarge"></i>
+    <p>TOP</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-info w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#members" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-id-badge w3-xxlarge"></i>
+    <p>MEMBERS</p>
+  </a>
+  <a href="#album" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-music w3-xxlarge"></i>
+    <p>ALBUMS</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-image w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#company" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-building w3-xxlarge"></i>
+    <p>COMPANY</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="/" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#members" class="w3-bar-item w3-button" style="width:25% !important">MEMBERS</a>
+    <a href="#album" class="w3-bar-item w3-button" style="width:25% !important">ALBUMS</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#company" class="w3-bar-item w3-button" style="width:25% !important">COMPANY</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-16 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo" style="font-family: 'Times New Roman', Times, serif;"> I'VE (아이브)</h1>
+    <h2 style="font-family: 'Times New Roman', Times, serif; padding-bottom: 10px;"> DIVE With I'VE</h2>
+    <img src="Photos/Group/group5.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2 class="w3-text-light-grey">About</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>IVE (아이브) is a six-member girl group under Starship Entertainment. They debuted on December 1, 2021 with their single album “Eleven”. The group's fandom name is known as DIVE.</p>
+    
+    <video width="100%" height="100%" controls>
+        <source src="video/eleven mv.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video> 
+    
+    <h2 class="w3-text-light-grey" style="padding-top: 32px">Official Accounts</h2>
+    <p>Instagram: <a href="https://www.instagram.com/ivestarship/" target="_blank" class="w3-hover-text-red">instagram/IVEStarship</a><p>
+    <p>Twitter: <a href="https://twitter.com/IVE_twt" target="_blank" class="w3-hover-text-red">twitter/IVEStarship</a><p>
+    <p>Facebook: <a href="https://www.facebook.com/IVEstarship" target="_blank" class="w3-hover-text-red">facebook/IVEStarship</a><p>
+    <h4 class="w3-text-light-grey" >Members Accounts</h4>
+    <p>Yu Jin: <a href="https://www.instagram.com/_yujin_an/" target="_blank" class="w3-hover-text-red">instagram/Yujin</a><p>    
+    <p>Won Young: <a href="https://www.instagram.com/for_everyoung10/" target="_blank" class="w3-hover-text-red">instagram/WonYoung</a><p>
+    
+    
+    
+    <!-- <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    </div> -->
+
+
+    <div class="w3-padding-16 w3-content" id="members">
+      <h2 class="w3-text-light-grey">Members</h2>  
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('gaeul').style.display='block'">
+        <img src="Photos/Gaeul/g10.jpg" alt="Gaeul" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Kim Ga Eul (김가을).</span> 24th September 2002.</p>
+        <p>Rapper, Main Dancer.</p><br>
+      </div>
+
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('yujin').style.display='block'">
+        <img src="Photos/Yujin/y10.jpg" alt="Yujin" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Ahn Yu Jin (안유진).</span> 1st September 2003.</p>
+        <p>Leader, Lead Vocalist.</p>
+        <br>  
+      </div>
+
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('rei').style.display='block'">
+        <img src="Photos/Rei/rei5.PNG" alt="Rei" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Naoi Rei (直井れい/ 나오이 레이).</span> 3rd February 2004.</p>
+        <p>Rapper, Vocalist.</p>
+        <br>
+      </div>
+      
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('wonyoung').style.display='block'">
+        <img src="Photos/WonYoung/wy5.PNG" alt="WonYoung" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Jang Won Young (장원영).</span> 31st August 2004.</p>
+        <p>Lead Vocalist, Visual, Center.</p>
+        <br>
+      </div>
+      
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('liz').style.display='block'">
+        <img src="Photos/Liz/liz5.PNG" alt="Liz" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Kim Ji Won (김지원).</span> 21st November 2004.</p>
+        <p>Main Vocalist.</p>
+        <br>
+      </div>
+
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('leeseo').style.display='block'">
+        <img src="Photos/Leeseo/lee5.jpg" alt="Leeseo" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Lee Hyun Seo (이현서).</span> 21st February 2007.</p>
+        <p>Lead Vocalist, Maknae.</p><br>
+      </div>
+    </div>
+    <!-- Grid for pricing tables -->
+    <div class="w3-padding-32 w3-content w3-row-padding" id="album">
+        <h2 class="w3-text-light-grey">Album</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <!-- <div class="w3-row-padding" > -->
+        <div class="w3-quarter " style = "cursor: pointer;">
+            <ul class="w3-ul w3-opacity w3-hover-opacity-off">
+            <img src = "Photos/Album/eleven1.jpg" width= 100% height = 100% onclick="document.getElementById('eleven').style.display='block'">
+            </ul>
+        </div>
+
+      <!-- <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          
+        </ul>
+      </div>  -->
+    </div>
+    
+    <!-- Testimonials -->
+    <!-- <div class="w3-padding-64 w3-content" id="members">
+        <h3 class="w3-padding-24 w3-text-light-grey">Members</h3>  
+        <img src="Photos/Gaeul/g10.jpg" alt="Gaeul" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Kim Ga Eul (김가을).</span> 24th September 2002.</p>
+        <p>Rapper, Main Dancer.</p><br>
+ 
+        <img src="Photos/Yujin/y10.jpg" alt="Yujin" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Ahn Yu Jin (안유진).</span> 1st September 2003.</p>
+        <p>Leader, Lead Vocalist.</p>
+        <br>
+        <img src="Photos/Rei/rei5.PNG" alt="Rei" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Naoi Rei (直井れい/ 나오이 레이).</span> 3rd February 2004.</p>
+        <p>Rapper, Vocalist.</p>
+        <br>
+        <img src="Photos/WonYoung/wy5.PNG" alt="WonYoung" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Jang Won Young (장원영).</span> 31st August 2004.</p>
+        <p>Vocalist, Visual.</p>
+        <br>
+        <img src="Photos/Liz/liz5.PNG" alt="Liz" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Kim Ji Won (김지원).</span> 21st November 2004.</p>
+        <p>Main Vocalist.</p>
+        <br>
+        <img src="Photos/Leeseo/lee5.jpg" alt="Leeseo" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Lee Hyun Seo (이현서).</span> 21st February 2007.</p>
+        <p>Vocalist, Maknae.</p>
+    </div> -->
+    
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="Photos/Group/group1.JPG" style="width:100%">
+        <img src="Photos/Group/group8.JPG" style="width:100%">
+        <img src="Photos/Group/group3.JPG" style="width:100%">
+        <img src="Photos/Group/group2.JPG" style="width:100%">
+        <img src="Photos/Group/group4.JPG" style="width:100%">
+        <img src="Photos/Group/group7.JPG" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="Photos/Group/group9.JPG" style="width:100%">
+        <img src="Photos/Group/group15.JPG" style="width:100%">
+        <img src="Photos/Group/group14.JPG" style="width:100%">
+        <img src="Photos/Group/group11.JPG" style="width:100%">
+        <img src="Photos/Group/group12.JPG" style="width:100%">
+        <img src="Photos/Group/group13.JPG" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="company">
+    <h2 class="w3-text-light-grey">Starship Entertainment</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Seoul, South Korea</p>
+      <!-- <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> -->
+      <!-- <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p> -->
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:<a>href = http://www.starship-ent.com/</a></p>
+    </div><br>
+    <!-- <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- Members Stats Modal PopUp-->
+<div id="gaeul" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-red w3-display-container bgEleven">
+      <span onclick="document.getElementById('gaeul').style.display='none'" class="w3-button w3-display-topright w3-hover-red w3-hover-text-black w3-xlarge">x</span>
+      <h1>Gaeul</h1>
+    </div>
+    <div class="wrapper w3-text-black">
+      <div class="c1">
+        <h4>Birth Name:</h4>
+        <p>Yoo Ji Min  (유지민)</p>
+        <h4> Birth Date:</h4>
+        <p> 11th April 2000</p>
+        <h4> Height:</h4> 
+        <p>167.8 cm</p>
+        <h4> Weight:</h4> 
+        <p>45 kg</p>
+        <h4> Nationality:</h4> 
+        <p>Korean</p>
+        <h4> Blood Type:</h4> 
+        <p>B</p>
+      </div>
+      <div class ="c2">
+        <img src="Photos/Gaeul/g1.jpg" style='height: 90%; width: 85%; object-fit: cover'>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="yujin" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-red w3-display-container bgEleven">
+      <span onclick="document.getElementById('yujin').style.display='none'" class="w3-button w3-display-topright w3-hover-red w3-hover-text-black w3-xlarge">x</span>
+      <h1>Yujin</h1>
+    </div>
+    <div class="wrapper w3-text-black">
+      <div class="c1">
+        <h4>Birth Name:</h4>
+        <p>Ahn Yu Jin  (유지민)</p>
+        <h4> Birth Date:</h4>
+        <p> 11th April 2000</p>
+        <h4> Height:</h4> 
+        <p>167.8 cm</p>
+        <h4> Weight:</h4> 
+        <p>45 kg</p>
+        <h4> Nationality:</h4> 
+        <p>Korean</p>
+        <h4> Blood Type:</h4> 
+        <p>B</p>
+      </div>
+      <div class ="c2">
+        <img src="Photos/Yujin/yj7.jpg" style='height: 90%; width: 85%; object-fit: cover'>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="rei" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-red w3-display-container bgEleven">
+      <span onclick="document.getElementById('rei').style.display='none'" class="w3-button w3-display-topright w3-hover-red w3-hover-text-black w3-xlarge">x</span>
+      <h1>Rei</h1>
+    </div>
+    <div class="wrapper w3-text-black">
+      <div class="c1">
+        <h4>Birth Name:</h4>
+        <p>Yoo Ji Min  (유지민)</p>
+        <h4> Birth Date:</h4>
+        <p> 11th April 2000</p>
+        <h4> Height:</h4> 
+        <p>167.8 cm</p>
+        <h4> Weight:</h4> 
+        <p>45 kg</p>
+        <h4> Nationality:</h4> 
+        <p>Korean</p>
+        <h4> Blood Type:</h4> 
+        <p>B</p>
+      </div>
+      <div class ="c2">
+        <img src="Photos/Rei/rei1.jpg" style='height: 90%; width: 85%; object-fit: cover'>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="wonyoung" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-red w3-display-container bgEleven">
+      <span onclick="document.getElementById('wonyoung').style.display='none'" class="w3-button w3-display-topright w3-hover-red w3-hover-text-black w3-xlarge">x</span>
+      <h1>Won Young</h1>
+    </div>
+    <div class="wrapper w3-text-black">
+      <div class="c1">
+        <h4>Birth Name:</h4>
+        <p>Yoo Ji Min  (유지민)</p>
+        <h4> Birth Date:</h4>
+        <p> 11th April 2000</p>
+        <h4> Height:</h4> 
+        <p>167.8 cm</p>
+        <h4> Weight:</h4> 
+        <p>45 kg</p>
+        <h4> Nationality:</h4> 
+        <p>Korean</p>
+        <h4> Blood Type:</h4> 
+        <p>B</p>
+      </div>
+      <div class ="c2">
+        <img src="Photos/WonYoung/wy1.jpg" style='height: 90%; width: 85%; object-fit: cover'>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="liz" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-red w3-display-container bgEleven">
+      <span onclick="document.getElementById('liz').style.display='none'" class="w3-button w3-display-topright w3-hover-red w3-hover-text-black w3-xlarge">x</span>
+      <h1>Liz</h1>
+    </div>
+    <div class="wrapper w3-text-black">
+      <div class="c1">
+        <h4>Birth Name:</h4>
+        <p>Yoo Ji Min  (유지민)</p>
+        <h4> Birth Date:</h4>
+        <p> 11th April 2000</p>
+        <h4> Height:</h4> 
+        <p>167.8 cm</p>
+        <h4> Weight:</h4> 
+        <p>45 kg</p>
+        <h4> Nationality:</h4> 
+        <p>Korean</p>
+        <h4> Blood Type:</h4> 
+        <p>B</p>
+      </div>
+      <div class ="c2">
+        <img src="Photos/Liz/liz2.jpg" style='height: 90%; width: 85%; object-fit: cover'>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="leeseo" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-red w3-display-container bgEleven">
+      <span onclick="document.getElementById('leeseo').style.display='none'" class="w3-button w3-display-topright w3-hover-red w3-hover-text-black w3-xlarge">x</span>
+      <h1>Leeseo</h1>
+    </div>
+    <div class="wrapper w3-text-black">
+      <div class="c1">
+        <h4>Birth Name:</h4>
+        <p>Yoo Ji Min  (유지민)</p>
+        <h4> Birth Date:</h4>
+        <p> 11th April 2000</p>
+        <h4> Height:</h4> 
+        <p>167.8 cm</p>
+        <h4> Weight:</h4> 
+        <p>45 kg</p>
+        <h4> Nationality:</h4> 
+        <p>Korean</p>
+        <h4> Blood Type:</h4> 
+        <p>B</p>
+      </div>
+      <div class ="c2">
+        <img src="Photos/Leeseo/lee1.jpg" style='height: 90%; width: 85%; object-fit: cover'>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+
+
+</body>
+</html>
+
+
+<!-- Album Songs Modal -->
+<div id="eleven" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-red w3-display-container bgEleven">
+      <span onclick="document.getElementById('eleven').style.display='none'" class="w3-button w3-display-topright w3-hover-red w3-hover-text-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+    <div class="w3-container w3-dark-grey w3-text-black" style="padding-bottom: 24px;">
+      <div class="audio-player">
+        <h2>1. Eleven</h2>
+        <audio id="audio-player" src="song/IVE - ELEVEN/01. ELEVEN.mp3" type="audio/mp3" controls="controls" title="eleven"></audio>
+        <a href="https://drive.google.com/file/d/1bYqBgY5RXkokwVmMh8Dz7-PwFaJ5eZOr/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+      <div class="audio-player">
+        <h2>2. Take It</h2>
+        <audio id="audio-player" src="song/IVE - ELEVEN/02. Take It.mp3" type="audio/mp3" controls="controls"></audio>
+        <a href="https://drive.google.com/file/d/1dgo3FMdzCxbGW886XGi9RqY9F2xbSbAg/view?usp=sharing" target="_blank" ><button class="downloadBtn"><i class="fa fa-download"></i>Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
