@@ -12,20 +12,17 @@
 <!-- Style -->
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px} 
-
 
 .hoverpointer {
   cursor: pointer;
 }
 
-container{
+/* mainContainer{
             width:100%;
             display: flex;
-            padding-bottom: 20px;   
             position: absolute;
             /* align-items:flex-end; */
-}
+
 
 .content1{
     /* padding top left bottom right */
@@ -93,6 +90,51 @@ h1{
     font-family: 'Courier New';
 }
 
+body{
+    background: blanchedalmond;
+    position: relative;
+    width:auto;
+    background-size: cover;
+    
+}
+
+.pageTitleContainer{
+    font-size:3vw ;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-bottom:15px;
+    width: 100%;
+    opacity: 80%;
+    background-color: black;
+    opacity: 50%;
+    position:sticky;
+    color: aliceblue;
+}
+
+.aboutContainerFlex{
+   
+    display:flex;
+}
+
+.aboutContainer{
+    padding-left: 50px;
+    padding-top: 30px;
+    width:auto;
+    position: relative;
+}
+
+.left{
+    display:inline-block;
+    flex: 1 1 0;
+    width: 50%;
+}
+
+.right{ 
+    display:inline-block;
+    width:45%;
+    flex: 1 1 0;
+}
+
 
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 /* #main {margin-left: 100px} */
@@ -101,32 +143,16 @@ h1{
 </style>
 
 
-<div class="bg" id="main" style=" margin: 20px 0 0 0" >
-        
-    <!-- padding top left bottom right -->
-    <div class= "container " id="header" style = "margin: 50px 0 30px 80px; width: auto;">
-        <h1 style="font-size: 3vw"> Song's Webpage</h1>
-    </div> 
-
-</div>
-<div class="bg" id="main" style="padding-top: 30px" >
-    <div class="content1">
-            <!-- <img src="aespa/Photos/Group/aespaGroup2.jpg" alt="aespa group" style = width:100%;> -->
-            <div style = "cursor: pointer;">
-                <a href="/ive"><img src="home/home_img/group1.JPG" alt="IVE Group Photo" style = width:100% onclick="document.getElementById('blackmamba').style.display='block'">
-                <p class = "img_desc">IVE</p>
-                </a>
-                <!-- <img src = "ive/Photos/Album/eleven.jpg" class="w3-image"> -->
-            </div>
-            
-    </div> 
-              
-
-    <div class="content2">
-        <div style = "cursor: pointer;">
-            <a href="/aespa"><img src="home_img/aespaGroup7.jpg" alt="aespa Group Photo" style = width:100% onclick="document.getElementById('blackmamba').style.display='block'">
-                <p class = "img_desc">æspa</p>
-                </a>
+<body>
+    <div class = "pageTitleContainer">
+        <h1 > Song's Webpage</h1>
+    </div>
+    <div class="aboutContainer">
+        <h1> About Me</h1>
+        <div class="abutContainerFlex">
+            <h2 class="left">image here</h2>
+            <p class="right">A current Computer Science graaduate from Monash Universitweeeeeeeeeeeeeeeeefsd wejhfaoiwecfhnawuefnxdauwefbnxauweyfawe awuiehngfuawefga awefxgdawefxaw efxaw xfaf xawefx awefxafxaw fxae fxaewy</p>
         </div>
     </div>
-</div>
+
+</body>
